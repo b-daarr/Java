@@ -1,7 +1,4 @@
-import javax.lang.model.type.NullType;
-import java.lang.reflect.Array;
-
-public class Main {
+public class P01 {
     public static void main(String[] args) {
         System.out.println("Hello World");
         System.out.println("New Line \n");
@@ -11,8 +8,8 @@ public class Main {
         System.out.println("Double qoute \"");
         System.out.println("qoute \'");
         System.out.println("Backslash \\");
-        // Variavbles
 
+        // Variavbles
         byte by = 10;
         short sh = 10;
         int i = 10;
@@ -33,5 +30,6 @@ public class Main {
         System.out.format("Number is %-,8.2f", f);
         // Strings
         System.out.format("Number is %s", s);
+        System.out.format("Number is " + b);
     }
 }

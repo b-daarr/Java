@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class P03 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -19,7 +19,7 @@ public class Main {
 
         // try, catch, finally
         try {
-           System.out.println(number);
+            System.out.println(number);
         }
         catch (Exception e) {
             System.out.println("An error occurred");
