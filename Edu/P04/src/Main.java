@@ -44,7 +44,8 @@ public class Main {
             operator = operator.toLowerCase();
             System.out.print("Binary mode - Enter second logic: ");
             boolean o = Inputs.nextBoolean();
-            System.out.print(Logic_Gates(i, o, operator));
+
+            System.out.print("Result: " + Logic_Gates(i, o, operator));
         }
         else {
             System.out.print("Unary mode - Enter logic: ");
@@ -52,7 +53,8 @@ public class Main {
             System.out.print("Unary mode - Enter logic operator {not, buffer}: ");
             String operator = Inputs.next();
             operator = operator.toLowerCase();
-            System.out.print(BN(i, operator));
+
+            System.out.print("Result: " + BN(i, operator));
         }
 
         String exit = Inputs.nextLine();

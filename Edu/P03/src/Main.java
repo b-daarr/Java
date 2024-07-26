@@ -57,31 +57,6 @@ public class Main {
         char operators = Inputs.next().charAt(0);
         double sno = Inputs.nextDouble();
 
-        // + Regular mode
-
-       /* double result = 0;
-        switch (operators) {
-            case '+':
-                result = (fno + sno);
-                break;
-            case '-':
-                result = (fno - sno);
-                break;
-            case '*':
-                result = (fno * sno);
-                break;
-            case '/':
-                result = (fno / sno);
-                break;
-            case '%':
-                result = (fno % sno);
-                break;
-            default:
-                result = 0.0;
-        } */
-
-        // Enhanced mode
-
         double result = switch (operators) {
             case '+' -> (fno + sno);
             case '-' -> (fno - sno);

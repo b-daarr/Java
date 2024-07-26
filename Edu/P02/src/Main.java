@@ -7,7 +7,7 @@ public class Main {
 
         System.out.format("Number is %d\n", i);
 
-	Inputs.nextLine("Press any key to continue...");
+	Inputs.nextLine();
 	Inputs.close();
     }
 }
