@@ -1,8 +1,8 @@
-import java.util.Scanner;
+import java.util.*;
 
-public class P04 {
-    public static boolean Logic_Gates(boolean a, boolean b, String operand){
-        return switch (operand) {
+public class Main {
+    public static boolean Logic_Gates(boolean a, boolean b, String operator){
+        return switch (operator) {
             case "and" -> a & b;
             case "or" -> a | b;
             case "nand" -> !(a & b);
@@ -25,9 +25,9 @@ public class P04 {
         // Logic Gates
         boolean opMode;
 
-        Scanner sc = new Scanner(System.in);
+        Scanner Inputs = new Scanner(System.in);
         System.out.print("Binary {b} or Unary{u} ?: ");
-        String mode = sc.next();
+        String mode = Inputs.next();
         mode = mode.toLowerCase();
 
         switch (mode) {
@@ -38,23 +38,24 @@ public class P04 {
 
         if (opMode) {
             System.out.print("Binary mode - Enter first logic: ");
-            boolean i = sc.nextBoolean();
+            boolean i = Inputs.nextBoolean();
             System.out.print("Binary mode - Enter logic operator {and, or, nand, nor, xor, xnor}: ");
-            String operator = sc.next();
+            String operator = Inputs.next();
             operator = operator.toLowerCase();
             System.out.print("Binary mode - Enter second logic: ");
-            boolean o = sc.nextBoolean();
+            boolean o = Inputs.nextBoolean();
             System.out.print(Logic_Gates(i, o, operator));
         }
         else {
             System.out.print("Unary mode - Enter logic: ");
-            boolean i = sc.nextBoolean();
+            boolean i = Inputs.nextBoolean();
             System.out.print("Unary mode - Enter logic operator {not, buffer}: ");
-            String operator = sc.next();
+            String operator = Inputs.next();
             operator = operator.toLowerCase();
             System.out.print(BN(i, operator));
         }
 
-        sc.close();
+        String exit = Inputs.nextLine();
+        Inputs.close();
     }
 }

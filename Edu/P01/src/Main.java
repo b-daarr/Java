@@ -1,5 +1,9 @@
-public class P01 {
+import java.util.Scanner;
+
+public class Main {
     public static void main(String[] args) {
+	Scanner Inputs = new Scanner(System.in);
+
         System.out.println("Hello World");
         System.out.println("New Line \n");
         System.out.println("Return \r");
@@ -31,5 +35,8 @@ public class P01 {
         // Strings
         System.out.format("Number is %s", s);
         System.out.format("Number is " + b);
+
+        String exit = Inputs.nextLine();
+        Inputs.close();
     }
 }
