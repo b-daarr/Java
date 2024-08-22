@@ -6,7 +6,7 @@ public class Main {
         List<Integer> result = new ArrayList<Integer>();
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < nums.length; j++) {
-                if (nums[i] + nums[j] == target) {
+                if (i != j && nums[i] + nums[j] == target) {
                     result.add(i);
                     result.add(j);
                     i = nums.length;
